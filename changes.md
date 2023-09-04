@@ -14,22 +14,6 @@
     - "Perfect parry" timing, while not giving any rewards other than initiative
     - With the downsides of chamber (higher stam cost, chftp stun, etc) it felt like chamber was never the correct option
 
-## True Combo Negation (expiremental)
-
-- `disableTrueComboDetector=0` -> `disableTrueComboDetector=1`
-- `ConfigMissDetectorRecovery=0.775` -> `ConfigMissDetectorRecovery=0.675`
-- This does **NOT** mean you will instantly get parry recovery if you parry after getting hit. Your parry recovery well be sped up very slightly
-
-- **Why**
-
-  - Getting true comboed sucks
-  - There's no design reason for punishing parrying too late more than parrying too early
-    - IE in cashmod, if you parry too early, you get hit once. If you parry too late, you usually get hit twice
-
-- **Downsides**
-  - Technically, miss detector will be in the game. But the amount of parry recovery you get from it (100ms) will be so minimal it may not be noticable in teamplay.
-  - Miss detector in the game, even ever so slightly, has a bad smell to it. Personally I think the ends justify the means, but we are looking into alternatives for removing true combo.
-
 ## Feint Lockout Increased (can punish feints consistently)
 
 - `StrikeAndStabFeintLockout=(X=0.1,Y=0.1,Z=0)` -> `StrikeAndStabFeintLockout=(X=0.125,Y=0.125,Z=0)`
@@ -79,23 +63,6 @@
 
 - **Downsides**
   - May make swapping and pulling more difficult (person being pulled has more time to react to you running off)
-
-## Miss Combo Removed
-
-- Not set in the config, have to manually edit all the Weapon BPs in the SDK
-
-- **Why**
-
-  - Misses shouldn't immediately put the misser into a free 50/50
-  - Misses are a mistake, and should be punishable
-    - This is more applicable to teamfight, since the person who misses can only parry while they are in recovery
-    - In duels, initiative is still questionable and not consistent when someone misses, but can be seen as a reset where the misser is down on stam
-      - Still working to see if there is a clean way to make misses a consistent loss of initiative in duels, without reintroducing miss detector & slow combo.
-
-- **Downsides**
-  - While I don't agree, I've heard arguments that it slows down and ruins the "flow" of teamfight
-  - Bug where if you land a max drag, it's impossible to keep comboing. We think this is because the server needs to receive your combo input **after** your swing connects **and** while still in release
-    - Talking to Cswic to see if there is a fix for this
 
 ## Increased Late Riposte Window
 

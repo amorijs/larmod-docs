@@ -21,7 +21,7 @@ useCustomParry=0
 customParryWindow=0.325
 customStabChamberWindow=0.225
 customStrikeChamberWindow=0.225
-disableTrueComboDetector=0
+disableTrueComboDetector=1
 customTracerHangTime=0.0
 customChamberFeintCost=15
 disableEndReleaseGlances=1
@@ -86,7 +86,7 @@ RokusKillfeedFix=1
 
 [/Game/Mordhau/Maps/WeaponRemovalMap_VersionA/BP_ModificationActor_VersionA.BP_ModificationActor_VersionA_C]
 ConfigRiposteWindow=0.125
-ConfigMissDetectorRecovery=0.675
+ConfigMissDetectorRecovery=0.775
 ConfigStabEarlyRelease=(A=0.30,B=1.0,C=0.30,D=1.0,E=0,F=0)
 ParryLowLoc=(X=85.0,Y=0,Z=-0)
 ParryLowScale=(X=1.0,Y=1.0,Z=0.96)
