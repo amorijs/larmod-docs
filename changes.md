@@ -119,3 +119,23 @@
 
 - **Downsides**
   - Nerfs neutral game (morph mixups). That being said, it still seems to be the best way to play and is still very hard to defend against at target ping
+
+## Stamina System Overhaul (Expiremental)
+
+- `StaminaRegen=(X=2.0,Y=5,Z=0.25)` -> `StaminaRegen=(X=0.55,Y=3,Z=0.25)`
+- `customChamberFeintCost=10` -> `customChamberFeintCost=15`
+- In Weapon BPs
+
+  - Feint cost `10` -> `15`
+  - Morph cost `7` -> `10`
+  - Miss cost `12` -> `20` (flat for all weapons)
+
+- **Why**
+
+  - Philosophy
+    - Lose stam for offensive options (morph, feint, etc)
+    - Lose stam for mistakes (missing)
+    - Rewarded stam when you do something good (hits, reading, creating space)
+
+- **Downsides**
+  - May cause more "low stam shenanigans" where the person who is losing on stam has more ways to get the advantage back
