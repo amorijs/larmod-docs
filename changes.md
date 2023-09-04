@@ -1,15 +1,11 @@
-# Larmod
-
-## Notes
+# Larmod Changes
 
 - All changes are balanced for around 52 ping
 - This doc compares this mods changes to cash mod
 
-### Changes
+## Strike Chamber window increased
 
-#### Strike Chamber window increased
-
-- `customStrikeChamberWindow=0.225` -> `customStrikeChamberWindow=0.225`
+- `customStrikeChamberWindow=0.200` -> `customStrikeChamberWindow=0.225`
 
 - **Why**
   - Extra 25ms seems enough to make chamber a viable mechanic while still allowing relatively easy counter play
@@ -18,7 +14,7 @@
     - "Perfect parry" timing, while not giving any rewards other than initiative
     - With the downsides of chamber (higher stam cost, chftp stun, etc) it felt like chamber was never the correct option
 
-#### True Combo Negation (expiremental)
+## True Combo Negation (expiremental)
 
 - `disableTrueComboDetector=0` -> `disableTrueComboDetector=1`
 - `ConfigMissDetectorRecovery=0.775` -> `ConfigMissDetectorRecovery=0.675`
@@ -34,7 +30,7 @@
   - Technically, miss detector will be in the game. But the amount of parry recovery you get from it (100ms) will be so minimal it may not be noticable in teamplay.
   - Miss detector in the game, even ever so slightly, has a bad smell to it. Personally I think the ends justify the means, but we are looking into alternatives for removing true combo.
 
-#### Feint Lockout Increased (can punish feints consistently)
+## Feint Lockout Increased (can punish feints consistently)
 
 - `StrikeAndStabFeintLockout=(X=0.1,Y=0.1,Z=0)` -> `StrikeAndStabFeintLockout=(X=0.125,Y=0.125,Z=0)`
 
@@ -43,17 +39,17 @@
   - On cashmod, feints were only consistently punishable with faster weapons (ie Evening Star stab). This makes it so feints should be punishable with any weapon.
   - Punishing feints still requires some skill and reaction speed, and the read obviously.
 
-#### Extended parry increased, Active parry removed
+## Extended parry increased, Active parry removed
 
 - For clarity, some definitions
   - Extended parry: How much time **after** your parry lands that you have "bonus" parry
-  - Active parry: How much time **after** youn start riposte that you have "bonus" parry
-- Implimentation is a little more complicated than just changing extended parry value, since that messes with late ripostes
+  - Active parry: How much time **after** you start riposte that you have "bonus" parry. This overwrites your extended parry window.
+- Implementation is a little more complicated than just changing extended parry value, since that messes with late ripostes
   - `ExperimentalParryDuration=0.01` -> `ExperimentalParryDuration=0.1`
     - Time in seconds that always gets added to end of your parry
   - `SuccessfulParryBonusDuration=0.1` (unchanged)
     - Time in seconds that gets added to the end of `expirementalParryDuration`
-    - This is the actual extended parry value, but since extended parry is directly tied to late ripostes, we use these 2 values to recreate a 200ms extended parry without messing with late ripostes. This has been tested and we found no differences or kinks in using this method
+    - This is the actual extended parry value, but since extended parry is directly tied to late ripostes, we use these 2 values to recreate a 200ms extended parry without messing with late ripostes. This has been tested and we found no differences or kinks in using this method. That being said, still needs more testing to be sure it is understood clearly.
   - `ActiveParryDuration=0.050` (50ms) -> `ActiveParryDuration=0`
 - This means, whenever you are in riposte, you will **never** have your parry window up
 
@@ -71,7 +67,7 @@
   - _May_ see more "backparries" (I don't think this is the case, but needs testing.)
   - Technically this does make people harder to kill for mispositions. I do subscribe to the idea that people being easy to kill makes teamfight more nuanced and increases variety of macro. That being said I think we should strive to make 1vX extremely difficult, and not impossible in some situations.
 
-#### Movement Acceleration reduced (expiremental)
+## Movement Acceleration reduced (expiremental)
 
 - `TimeToMaxSprint=3` -> `TimeToMaxSprint=4`
 
@@ -84,7 +80,7 @@
 - **Downsides**
   - May make swapping and pulling more difficult (person being pulled has more time to react to you running off)
 
-#### Miss Combo Removed
+## Miss Combo Removed
 
 - Not set in the config, have to manually edit all the Weapon BPs in the SDK
 
@@ -94,12 +90,14 @@
   - Misses are a mistake, and should be punishable
     - This is more applicable to teamfight, since the person who misses can only parry while they are in recovery
     - In duels, initiative is still questionable and not consistent when someone misses, but can be seen as a reset where the misser is down on stam
-      - Still working to see if there is a clean way to make misses a consistent loss of initiative in duels.
+      - Still working to see if there is a clean way to make misses a consistent loss of initiative in duels, without reintroducing miss detector & slow combo.
 
 - **Downsides**
   - While I don't agree, I've heard arguments that it slows down and ruins the "flow" of teamfight
+  - Bug where if you land a max drag, it's impossible to keep comboing. We think this is because the server needs to receive your combo input **after** your swing connects **and** while still in release
+    - Talking to Cswic to see if there is a fix for this
 
-#### Increased Late Riposte Window
+## Increased Late Riposte Window
 
 - `ConfigRiposteWindow=0.1` -> `ConfigRiposteWindow=0.125`
 
@@ -107,7 +105,7 @@
   - Buffs ripostes. In cash mod, morph mixups seem to be the optimal way to play 99% of the time.
   - Even in testing with this change, morph mixups were just better
 
-#### Stab Curve Slowed Down Slightly
+## Stab Curve Slowed Down Slightly
 
 Important to note, you are still getting hit at the **exact** same time from when the stab animation starts. This change just makes the forward motion more readable
 
