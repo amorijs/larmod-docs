@@ -20,8 +20,8 @@ useCustomChamber=1
 useCustomParry=0
 customParryWindow=0.325
 customStabChamberWindow=0.225
-customStrikeChamberWindow=0.200
-disableTrueComboDetector=1
+customStrikeChamberWindow=0.225
+disableTrueComboDetector=0
 customTracerHangTime=0.0
 customChamberFeintCost=10
 disableEndReleaseGlances=1
@@ -47,66 +47,82 @@ ExcludeStabChftpStam=1
 useChamberSlowdown=1
 CustomChamberSlowdownDuration=0.5
 useFreeStun=1
-StrikeAndStabFeintLockout=(X=0.1,Y=0.1,Z=0)
+StrikeAndStabFeintLockout=(X=0.125,Y=0.125,Z=0)
 #Up from X=0.25, Y=0.75
 customMovementSpeedMultiplier=(X=1.04,Y=1.3,Z=1.8)
 customMovementAccelerations=(X=1.0,Y=1.786,Z=0.767)
-TimeToMaxSprint=3
+TimeToMaxSprint=4
 CustomParryAngles=(X=120.0,Y=50.0,Z=0)
 EasyParryDuration=0.7
+
+##################################################
+# If true, everything in this block gets used
 useExperimentalParry=true
-ExperimentalParryDuration=0.01
+
+# Any time parry gets hit, set remaining amount of parry 0 + x amount of seconds. Small number for animation blending fixes. 
+ExperimentalParryDuration=0.1
+
+# Extended parry - how much time after a parry lands you get bonus parry
 SuccessfulParryBonusDuration=0.1
-ActiveParryDuration=0.050
+
+# Active parry - how much time after you start riposte that you have a parry window
+ActiveParryDuration=0
+###################################################
+
 WorldHitStamCostMulti=1.0
+# Short parry duration after being cftp stunned
 ChftpStunParryDuration=0.200
+# How long cftp stun lasts
 ChftpStunParryRecoveryTime=0.900
 DisableKickParry=1
 DisableJumpParryRecovery=1
 StabFeintWindow=0.07
 ChftpStunTurnCap=3
 DisableZeroStamCombo=1
-StaminaRegen=(X=2,Y=5,Z=0.25)
+
+# x: how many seconds before stam regen starts. y: stam per tick. z: tick length in seconds
+StaminaRegen=(X=2.0,Y=5,Z=0.25)
+
 RokusKillfeedFix=1
 
 [/Game/Mordhau/Maps/WeaponRemovalMap_VersionA/BP_ModificationActor_VersionA.BP_ModificationActor_VersionA_C]
-ConfigRiposteWindow=0.1
-ConfigMissDetectorRecovery=0.0
+ConfigRiposteWindow=0.125
+ConfigMissDetectorRecovery=0.675
 ConfigStabEarlyRelease=(A=0.30,B=1.0,C=0.30,D=1.0,E=0,F=0)
 ParryLowLoc=(X=85.0,Y=0,Z=-0)
 ParryLowScale=(X=1.0,Y=1.0,Z=0.96)
 ParryLowRot=(x=0.001,Y=49,Z=0)
 ParryHighRot=(X=0.001,Y=-35,Z=0)
-ParryHighScale=(X=1.0,Y=1.0,Z=1.11))
+ParryHighScale=(X=1.0,Y=1.0,Z=1.11)
 ParryHighLoc=(X=45,Y=0,Z=-120)
 ForwardParryDistance=(X=30.0,Y=17.0,Z=0.0)
-WeaponsConfig=Longsword=/CashWeapons/Weapons/BP_NACL_Longsword.BP_NACL_Longsword_C
-WeaponsConfig=Zweihander=/CashWeapons/Weapons/BP_NACL_Zweihander.BP_NACL_Zweihander_C
-WeaponsConfig=Halberd=/CashWeapons/Weapons/BP_NACL_Halberd.BP_NACL_Halberd_C
-WeaponsConfig=Poleaxe=/CashWeapons/Weapons/BP_NACL_Poleaxe.BP_NACL_Poleaxe_C
-WeaponsConfig=Battleaxe=/CashWeapons/Weapons/BP_NACL_BattleAxe.BP_NACL_BattleAxe_C
-WeaponsConfig=Greatsword=/CashWeapons/Weapons/BP_NACL_Greatsword.BP_NACL_Greatsword_C
-WeaponsConfig=Spear=/CashWeapons/Weapons/BP_NACL_Spear.BP_NACL_Spear_C
-WeaponsConfig=Bardiche=/CashWeapons/Weapons/BP_NACL_Bardiche.BP_NACL_Bardiche_C
-WeaponsConfig=Billhook=/CashWeapons/Weapons/BP_NACL_Billhook.BP_NACL_Billhook_C
-WeaponsConfig=Eveningstar=/CashWeapons/Weapons/BP_NACL_Eveningstar.BP_NACL_Eveningstar_C
-WeaponsConfig=Messer=/CashWeapons/Weapons/BP_NACL_Messer.BP_NACL_Messer_C
-WeaponsConfig=Estoc=/CashWeapons/Weapons/BP_NACL_Estoc.BP_NACL_Estoc_C
-WeaponsConfig=Maul=/CashWeapons/Weapons/BP_NACL_Maul.BP_NACL_Maul_C
-WeaponsConfig=Waraxe=/CashWeapons/Weapons/BP_NACL_WarAxe.BP_NACL_WarAxe_C
-WeaponsConfig=Rapier=/CashWeapons/Weapons/BP_NACL_Rapier.BP_NACL_Rapier_C
-WeaponsConfig=ExecutionerSword=/CashWeapons/Weapons/BP_NACL_Executioner.BP_NACL_Executioner_C
-WeaponsConfig=Falx=/CashWeapons/Weapons/BP_NACL_Falx.BP_NACL_Falx_C
-WeaponsConfig=Partisan=/CashWeapons/Weapons/BP_NACL_Partisan.BP_NACL_Partisan_C
-WeaponsConfig=Polehammer=/CashWeapons/Weapons/BP_NACL_Polehammer.BP_NACL_Polehammer_C
-WeaponsConfig=Kick=/CashWeapons/Weapons/BP_NACL_Kick.BP_NACL_Kick_C
-WeaponsConfig=Warhammer=/CashWeapons/Weapons/BP_NACL_Warhammer.BP_NACL_Warhammer_C
-WeaponsConfig=Shortspear=/CashWeapons/Weapons/BP_NACL_ShortSpear.BP_NACL_ShortSpear_C
-WeaponsConfig=Armingsword=/CashWeapons/Weapons/BP_NACL_ArmingSword.BP_NACL_ArmingSword_C
-WeaponsConfig=Quarterstaff=/CashWeapons/Weapons/BP_NACL_Quarterstaff.BP_NACL_Quarterstaff_C
-WeaponsConfig=Mace=/CashWeapons/Weapons/BP_NACL_Mace.BP_NACL_Mace_C
-WeaponsConfig=Falchion=/CashWeapons/Weapons/BP_NACL_Falchion.BP_NACL_Falchion_C
-ConfigStabCurve=/CashWeapons/Weapons/FC_NACL_StabCurve2.FC_NACL_StabCurve2
+WeaponsConfig=Longsword=/larweapons/Weapons/BP_NACL_Longsword.BP_NACL_Longsword_C
+WeaponsConfig=Zweihander=/larweapons/Weapons/BP_NACL_Zweihander.BP_NACL_Zweihander_C
+WeaponsConfig=Halberd=/larweapons/Weapons/BP_NACL_Halberd.BP_NACL_Halberd_C
+WeaponsConfig=Poleaxe=/larweapons/Weapons/BP_NACL_Poleaxe.BP_NACL_Poleaxe_C
+WeaponsConfig=Battleaxe=/larweapons/Weapons/BP_NACL_BattleAxe.BP_NACL_BattleAxe_C
+WeaponsConfig=Greatsword=/larweapons/Weapons/BP_NACL_Greatsword.BP_NACL_Greatsword_C
+WeaponsConfig=Spear=/larweapons/Weapons/BP_NACL_Spear.BP_NACL_Spear_C
+WeaponsConfig=Bardiche=/larweapons/Weapons/BP_NACL_Bardiche.BP_NACL_Bardiche_C
+WeaponsConfig=Billhook=/larweapons/Weapons/BP_NACL_Billhook.BP_NACL_Billhook_C
+WeaponsConfig=Eveningstar=/larweapons/Weapons/BP_NACL_Eveningstar.BP_NACL_Eveningstar_C
+WeaponsConfig=Messer=/larweapons/Weapons/BP_NACL_Messer.BP_NACL_Messer_C
+WeaponsConfig=Estoc=/larweapons/Weapons/BP_NACL_Estoc.BP_NACL_Estoc_C
+WeaponsConfig=Maul=/larweapons/Weapons/BP_NACL_Maul.BP_NACL_Maul_C
+WeaponsConfig=Waraxe=/larweapons/Weapons/BP_NACL_WarAxe.BP_NACL_WarAxe_C
+WeaponsConfig=Rapier=/larweapons/Weapons/BP_NACL_Rapier.BP_NACL_Rapier_C
+WeaponsConfig=ExecutionerSword=/larweapons/Weapons/BP_NACL_Executioner.BP_NACL_Executioner_C
+WeaponsConfig=Falx=/larweapons/Weapons/BP_NACL_Falx.BP_NACL_Falx_C
+WeaponsConfig=Partisan=/larweapons/Weapons/BP_NACL_Partisan.BP_NACL_Partisan_C
+WeaponsConfig=Polehammer=/larweapons/Weapons/BP_NACL_Polehammer.BP_NACL_Polehammer_C
+WeaponsConfig=Kick=/larweapons/Weapons/BP_NACL_Kick.BP_NACL_Kick_C
+WeaponsConfig=Warhammer=/larweapons/Weapons/BP_NACL_Warhammer.BP_NACL_Warhammer_C
+WeaponsConfig=Shortspear=/larweapons/Weapons/BP_NACL_ShortSpear.BP_NACL_ShortSpear_C
+WeaponsConfig=Armingsword=/larweapons/Weapons/BP_NACL_ArmingSword.BP_NACL_ArmingSword_C
+WeaponsConfig=Quarterstaff=/larweapons/Weapons/BP_NACL_Quarterstaff.BP_NACL_Quarterstaff_C
+WeaponsConfig=Mace=/larweapons/Weapons/BP_NACL_Mace.BP_NACL_Mace_C
+WeaponsConfig=Falchion=/larweapons/Weapons/BP_NACL_Falchion.BP_NACL_Falchion_C
+ConfigStabCurve=/larweapons/Weapons/FC_StabCurve.FC_StabCurve
 
 
 
