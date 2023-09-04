@@ -3,7 +3,7 @@
 - All changes are balanced for around 52 ping
 - This doc compares this mods changes to cash mod
 
-## Strike Chamber window increased
+## Strike Chamber Window Increased
 
 - `customStrikeChamberWindow=0.200` -> `customStrikeChamberWindow=0.225`
 
@@ -99,15 +99,18 @@
 
 ## Increased Late Riposte Window
 
-- `ConfigRiposteWindow=0.1` -> `ConfigRiposteWindow=0.125`
+- `ConfigRiposteWindow=0.1` (unchanged)
+- `ExperimentalParryDuration=0.01` -> `ExperimentalParryDuration=0.1`
+- `SuccessfulParryBonusDuration=0.05` -> `SuccessfulParryBonusDuration=0.1`
+- Kind of complicated and still not fully understood, but testing feels good so far.
 
 - **Why**
-  - Buffs ripostes. In cash mod, morph mixups seem to be the optimal way to play 99% of the time.
-  - Even in testing with this change, morph mixups were just better
+  - Slight buff to ripostes. In cash mod, morph mixups seem to be the optimal way to play 99% of the time.
+  - Even in testing with this change, morph mixups were just better.
 
-## Stab Curve Slowed Down Slightly
+## Stab Curve Slowed Down
 
-Important to note, you are still getting hit at the **exact** same time from when the stab animation starts. This change just makes the forward motion more readable
+- Important to note, you are still getting hit at the **exact** same time from when the stab animation starts. This change just makes the forward motion more readable
 
 - **Why**
 
