@@ -2,7 +2,7 @@
 
 - Purpose
   - Fix my main issues with Cashmod (which was still probably the best competitive version of the game we've had thus far)
-  - Expirement with big changes (ie the stam overhaul)
+  - Experement with big changes (ie the stam overhaul)
 - All changes are balanced for around 52 ping
 - This doc compares this mods changes to cash mod
 
@@ -47,7 +47,7 @@
   - `ExperimentalParryDuration=0.01` -> `ExperimentalParryDuration=0.1`
     - Time in seconds that always gets added to end of your parry
   - `SuccessfulParryBonusDuration=0.1` (unchanged)
-    - Time in seconds that gets added to the end of `experimentalParryDuration`
+    - Time in seconds that gets added to the end of `iParryDuration`
     - This is the actual extended parry value, but since extended parry is directly tied to late ripostes, we use these 2 values to recreate a 200ms extended parry without messing with late ripostes. This has been tested and we found no differences or kinks in using this method. That being said, still needs more testing to be sure it is understood clearly.
   - `ActiveParryDuration=0.050` (50ms) -> `ActiveParryDuration=0`
 - This means, whenever you are in riposte, you will **never** have your parry window up
@@ -77,7 +77,7 @@
   - Slight buff to ripostes. In cash mod, morph mixups seem to be the optimal way to play 99% of the time.
   - Even in testing with this change, morph mixups were just better.
 
-## Movement Acceleration reduced (experimental)
+## Movement Acceleration reduced (i)
 
 - `TimeToMaxSprint=3` -> `TimeToMaxSprint=4`
 
@@ -90,7 +90,7 @@
 - **Downsides**
   - May make swapping and pulling more difficult (person being pulled has more time to react to you running off)
 
-## Stamina System Overhaul (experimental)
+## Stamina System Overhaul (i)
 
 - `StaminaRegen=(X=2.0,Y=5,Z=0.25)` -> `StaminaRegen=(X=0.55,Y=3,Z=0.25)`
 - `customChamberFeintCost=10` -> `customChamberFeintCost=15`
