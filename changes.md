@@ -1,5 +1,8 @@
 # Larmod Changes
 
+- Purpose
+  - Fix my main issues with Cashmod (which was still probably the best competitive version of the game we've had thus far)
+  - Expirement with big changes (ie the stam overhaul)
 - All changes are balanced for around 52 ping
 - This doc compares this mods changes to cash mod
 
@@ -22,6 +25,18 @@
   - Punishing feints feels good
   - On cashmod, feints were only consistently punishable with faster weapons (ie Evening Star stab). This makes it so feints should be punishable with any weapon.
   - Punishing feints still requires some skill and reaction speed, and the read obviously.
+
+## Stab Curve Slowed Down Slightly
+
+- Important to note, you are still getting hit at the **exact** same time from when the stab animation starts. This change just makes the forward motion more readable
+
+- **Why**
+
+  - Makes stab animation more digestible, and technically less strong, albeit slightly
+  - Stab is still strong and difficult read at the target ping (52ms)
+
+- **Downsides**
+  - Nerfs neutral game (morph mixups). That being said, it still seems to be the best way to play and is still very hard to defend against at target ping
 
 ## Extended parry increased, Active parry removed
 
@@ -51,6 +66,17 @@
   - _May_ see more "backparries" (I don't think this is the case, but needs testing.)
   - Technically this does make people harder to kill for mispositions. I do subscribe to the idea that people being easy to kill makes teamfight more nuanced and increases variety of macro. That being said I think we should strive to make 1vX extremely difficult, and not impossible in some situations.
 
+## Increased Late Riposte Window (expiremental)
+
+- `ConfigRiposteWindow=0.1` (unchanged)
+- `ExperimentalParryDuration=0.01` -> `ExperimentalParryDuration=0.1`
+- `SuccessfulParryBonusDuration=0.05` -> `SuccessfulParryBonusDuration=0.1`
+- Kind of complicated and still not fully understood, but testing feels good so far.
+
+- **Why**
+  - Slight buff to ripostes. In cash mod, morph mixups seem to be the optimal way to play 99% of the time.
+  - Even in testing with this change, morph mixups were just better.
+
 ## Movement Acceleration reduced (expiremental)
 
 - `TimeToMaxSprint=3` -> `TimeToMaxSprint=4`
@@ -64,30 +90,7 @@
 - **Downsides**
   - May make swapping and pulling more difficult (person being pulled has more time to react to you running off)
 
-## Increased Late Riposte Window
-
-- `ConfigRiposteWindow=0.1` (unchanged)
-- `ExperimentalParryDuration=0.01` -> `ExperimentalParryDuration=0.1`
-- `SuccessfulParryBonusDuration=0.05` -> `SuccessfulParryBonusDuration=0.1`
-- Kind of complicated and still not fully understood, but testing feels good so far.
-
-- **Why**
-  - Slight buff to ripostes. In cash mod, morph mixups seem to be the optimal way to play 99% of the time.
-  - Even in testing with this change, morph mixups were just better.
-
-## Stab Curve Slowed Down
-
-- Important to note, you are still getting hit at the **exact** same time from when the stab animation starts. This change just makes the forward motion more readable
-
-- **Why**
-
-  - Makes stab animation more digestible, and technically less strong, albeit slightly
-  - Stab is still strong and difficult read at the target ping (52ms)
-
-- **Downsides**
-  - Nerfs neutral game (morph mixups). That being said, it still seems to be the best way to play and is still very hard to defend against at target ping
-
-## Stamina System Overhaul (Expiremental)
+## Stamina System Overhaul (expiremental)
 
 - `StaminaRegen=(X=2.0,Y=5,Z=0.25)` -> `StaminaRegen=(X=0.55,Y=3,Z=0.25)`
 - `customChamberFeintCost=10` -> `customChamberFeintCost=15`
