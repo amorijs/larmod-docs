@@ -6,7 +6,7 @@
 - All changes are balanced for around 52 ping
 - This doc compares this mods changes to cash mod
 
-## Strike Chamber Window Slightly
+## Increase Strike Chamber Window Slightly
 
 - `customStrikeChamberWindow=0.200` -> `customStrikeChamberWindow=0.225`
 
