@@ -77,7 +77,7 @@
   - Slight buff to ripostes. In cash mod, morph mixups seem to be the optimal way to play 99% of the time.
   - Even in testing with this change, morph mixups were just better.
 
-## Movement Acceleration reduced (i)
+## Movement Acceleration reduced (experimental)
 
 - `TimeToMaxSprint=3` -> `TimeToMaxSprint=4`
 
@@ -90,7 +90,7 @@
 - **Downsides**
   - May make swapping and pulling more difficult (person being pulled has more time to react to you running off)
 
-## Stamina System Overhaul (i)
+## Stamina System Overhaul (experimental)
 
 - `StaminaRegen=(X=2.0,Y=5,Z=0.25)` -> `StaminaRegen=(X=0.55,Y=3,Z=0.25)`
 - `customChamberFeintCost=10` -> `customChamberFeintCost=15`
