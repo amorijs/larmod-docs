@@ -93,6 +93,13 @@
 ## Stamina System Overhaul (experimental)
 
 - `StaminaRegen=(X=2.0,Y=5,Z=0.25)` -> `StaminaRegen=(X=0.55,Y=3,Z=0.25)`
+
+  - x = Time in **seconds** to start stam regen
+  - y = how much stam you get in a **tick**
+  - z = how often in **seconds** a tick happens
+  - Equation for stam regen per second: `y * z * (1 / z)`
+    - ie `3 * 0.25 * (1 / 0.25)` = _12 stam per second_
+
 - `customChamberFeintCost=10` -> `customChamberFeintCost=15`
 - In Weapon BPs
 
