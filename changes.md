@@ -102,10 +102,9 @@
 
 - **Why**
 
-  - Philosophy
-    - Lose stam for offensive options (morph, feint, etc)
-    - Lose stam for mistakes (missing)
-    - Rewarded stam when you do something good (hits, reading, creating space)
+  - Lose stam for offensive options (morph, feint, etc)
+  - Lose stam for mistakes (missing)
+  - Rewarded stam when you do something good (hits, reading, creating space)
 
 - **Downsides**
   - May cause more "low stam shenanigans" where the person who is losing on stam has more ways to get the advantage back
