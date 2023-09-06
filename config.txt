@@ -74,6 +74,8 @@ StaminaRegen=(X=0.55,Y=3,Z=0.25)
 RokusKillfeedFix=1
 
 [/Game/Mordhau/Maps/WeaponRemovalMap_VersionA/BP_ModificationActor_VersionA.BP_ModificationActor_VersionA_C]
+StrikeChamberStamCost=15
+StabChamberStamCost=10
 ConfigRiposteWindow=0.125
 ConfigMissDetectorRecovery=0.775
 ConfigStabEarlyRelease=(A=0.30,B=1.0,C=0.30,D=1.0,E=0,F=0)
@@ -111,3 +113,4 @@ WeaponsConfig=Quarterstaff=/larweapons/Weapons/BP_NACL_Quarterstaff.BP_NACL_Quar
 WeaponsConfig=Mace=/larweapons/Weapons/BP_NACL_Mace.BP_NACL_Mace_C
 WeaponsConfig=Falchion=/larweapons/Weapons/BP_NACL_Falchion.BP_NACL_Falchion_C
 ConfigStabCurve=/larweapons/Weapons/FC_StabCurve25.FC_StabCurve25
+
