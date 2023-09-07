@@ -98,7 +98,7 @@
 
 This is by far the biggest change, and still needs heavy testing. The philosophy of the new stam system is, lose stam much faster, but also gain it back much quicker. Hopefully this makes for more dynamic play, but we will have to see.
 
-- `StaminaRegen=(X=2.0,Y=5,Z=0.25)` -> `StaminaRegen=(X=0.55,Y=3,Z=0.25)`
+- `StaminaRegen=(X=2.0,Y=5,Z=0.25)` -> `StaminaRegen=(X=0.5,Y=3.5,Z=0.25)`
 
   - x = Time in **seconds** to start stam regen
   - y = how much stam you get in a **tick**
