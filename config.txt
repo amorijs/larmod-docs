@@ -25,7 +25,7 @@ disarmPickupDelayDuration=0.8
 customTeamHitRecoveryTime=0.4
 customWorldHitRecoveryTime=0.775
 useCompKick=1
-customParryRecoveryTime=0.775
+customParryRecoveryTime=0.800
 customCompensationOne=(X=0.0,Y=0.0,Z=0.000001)
 customCompensationTwo=(X=0.0,Y=0.0,Z=0.000001)
 customGlanceTurnAmount=(X=1000.0,Y=1000.0,Z=0.0)
@@ -69,7 +69,7 @@ ChftpStunTurnCap=3
 DisableZeroStamCombo=1
 
 # x: how many seconds before stam regen starts. y: stam per tick. z: tick length in seconds
-StaminaRegen=(X=0.55,Y=3,Z=0.25)
+StaminaRegen=(X=0.5,Y=3.5,Z=0.25)
 
 RokusKillfeedFix=1
 
