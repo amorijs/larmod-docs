@@ -23,6 +23,7 @@
 - `customParryRecoveryTime=0.775` -> `customParryRecoveryTime=0.800`
 
   - Parry recovery should scale evenly with feint recovery, hence the increase
+  - This means true combo will be even stronger, but at least now it's a more consistent mechanic where sometimes you don't get true combo and sometimes you do. Now if someone parrys after they got hit, you can almost always true combo
 
 - **Why**
   - Punishing feints feels good
@@ -130,3 +131,8 @@ This is by far the biggest change, and still needs heavy testing. The philosophy
 ## CHFTP Stun Removed (experimental)
 
 - `useChftpStun=1` -> `useChftpStun=0`
+
+## Necessary Evil - True combo
+
+- Ideally, there is no true combo. But the simplest fix for this is to reintroduce some form of miss detector (ie when you get miss detector speed up parry recovery by 100ms). This has an obviously bad smell to it, because having any miss detector in a team fight environment introduces inconsistencies. Even if the miss detector effect wasn't perceivable to the player, it could change outcomes.
+- The only other way to fix this at the moment, is to change a ton of timings (ie parry recovery, miss combo speed, etc). This opens up a can of worms that we don't want to deal with at the moment.
