@@ -17,9 +17,12 @@
     - "Perfect parry" timing, while not giving any rewards other than initiative
     - With the downsides of chamber (higher stam cost, chftp stun, etc) it felt like chamber was never the correct option
 
-## Feint Lockout Increased (can punish feints consistently)
+## Feint Lockout Increased (can punish feints consistently) & Parry Recovery Increased
 
 - `StrikeAndStabFeintLockout=(X=0.1,Y=0.1,Z=0)` -> `StrikeAndStabFeintLockout=(X=0.125,Y=0.125,Z=0)`
+- `customParryRecoveryTime=0.775` -> `customParryRecoveryTime=0.800`
+
+  - Parry recovery should scale evenly with feint recovery, hence the increase
 
 - **Why**
   - Punishing feints feels good
@@ -92,6 +95,8 @@
 
 ## Stamina System Overhaul (experimental)
 
+This is by far the biggest change, and still needs heavy testing. The philosophy of the new stam system is, lose stam much faster, but also gain it back much quicker. Hopefully this makes for more dynamic play, but we will have to see.
+
 - `StaminaRegen=(X=2.0,Y=5,Z=0.25)` -> `StaminaRegen=(X=0.55,Y=3,Z=0.25)`
 
   - x = Time in **seconds** to start stam regen
@@ -112,9 +117,11 @@
   - Lose stam for offensive options (morph, feint, etc)
   - Lose stam for mistakes (missing)
   - Rewarded stam when you do something good (hits, reading, creating space)
+  - Immediate reward when your opponent dumps stam (ie feint spam)
 
 - **Downsides**
   - May cause more "low stam shenanigans" where the person who is losing on stam has more ways to get the advantage back
+  - Players may not be used to how fast stam goes, especially if they're missing or constantly buffering. The game plays much differently so test with an open mind.
 
 ## Stab Chamber Cost Reduced (experimental)
 
