@@ -30,7 +30,7 @@ customCompensationOne=(X=0.0,Y=0.0,Z=0.000001)
 customCompensationTwo=(X=0.0,Y=0.0,Z=0.000001)
 customGlanceTurnAmount=(X=1000.0,Y=1000.0,Z=0.0)
 customFOV=110.0
-useChftpStun=1
+useChftpStun=0
 CustomChftpStunStamCost=15.0
 ExcludeStabChftpStam=1
 useChamberSlowdown=1
@@ -60,7 +60,7 @@ ActiveParryDuration=0
 WorldHitStamCostMulti=1.0
 # Short parry duration after being cftp stunned
 ChftpStunParryDuration=0.200
-# How long cftp stun lasts
+# How long your parry recovery is after parrying during cftp stun
 ChftpStunParryRecoveryTime=0.900
 DisableKickParry=1
 DisableJumpParryRecovery=1

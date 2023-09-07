@@ -115,3 +115,11 @@
 
 - **Downsides**
   - May cause more "low stam shenanigans" where the person who is losing on stam has more ways to get the advantage back
+
+## Stab Chamber Cost Reduced (experimental)
+
+- `StabChamberStamCost=15` -> `StabChamberStamCost=10`
+
+## CHFTP Stun Removed (experimental)
+
+- `useChftpStun=1` -> `useChftpStun=0`
