@@ -149,10 +149,23 @@ This is by far the biggest change, and still needs testing. The philosophy of th
   - Kick is the only attack in the game that breaks timings and can "steal" initiative
     - In this system, kick is commital, and a risk, but still a viable option
 
+## Kick Recovery is Faster (Can't punish a kick miss on reaction)
+
+- Felt appropriate considering the nerf
+- Still punishable with timing
+- Experimental, needs more testing
+
 ## Kick Miss is 10 Stam
 
-- **Why**
-  - With the nerf to kicks, this felt appropriate
+Felt appropriate considering the nerf
+
+## Dagger, Rapier, Scimitar stab windup slowed down slightly
+
+Must I explain why
+
+## Max FOV Increased to 115
+
+Common request, not really opinionated on this one
 
 ## Necessary Evil - True combo
 
