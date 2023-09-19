@@ -3,6 +3,7 @@
 - Purpose
   - Fix my main issues with Cashmod (which was still probably the best competitive version of the game we've had thus far)
   - Experiment with big changes (ie the stam overhaul)
+  - Consistent mechanics
 - All changes are balanced for around 48 ping
 - This doc compares this mods changes to cash mod
 
