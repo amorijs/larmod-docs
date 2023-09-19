@@ -129,7 +129,7 @@ This is by far the biggest change, and still needs testing. The philosophy of th
   - Due to current limitations, you have a 1ms parry window during your stun animation. So unless you are hitting the god parry, you are getting hit (if the opponent punishes on time)
   - This also means the current meta is to immediately parry after your CHFTP so you can actually moved. Ideally, there is no stun, you are just in parry recovery but can move freely, but again, need access to the stun BP to make this possible.
 
-- **Why CHFTP Stun**
+- **Why CHFTP stun**
 
   - See the "Neccessary Evil" section below
 
@@ -139,7 +139,7 @@ This is by far the biggest change, and still needs testing. The philosophy of th
 
   Ideally, when you CHFTP, it just puts you in parry recovery (you can move, but not parry) instead of stunning you, but we can't do that at the moment. Cswic is working on making the stun BPs accessible for us so hopefully we can make it happen soon
 
-## Kick unfeintable
+## Kick Unfeintable
 
 - **Why**
   - Kick feint runaway mixup is really silly, and puts too much onus on the attacker to make the perfect spacing play
@@ -149,7 +149,7 @@ This is by far the biggest change, and still needs testing. The philosophy of th
   - Kick is the only attack in the game that breaks timings and can "steal" initiative
     - In this system, kick is commital, and a risk, but still a viable option
 
-## Kick Miss is 10 stam
+## Kick Miss is 10 Stam
 
 - **Why**
   - With the nerf to kicks, this felt appropriate
