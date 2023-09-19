@@ -3,7 +3,7 @@
 - Purpose
   - Fix my main issues with Cashmod (which was still probably the best competitive version of the game we've had thus far)
   - Experiment with big changes (ie the stam overhaul)
-- All changes are balanced for around 52 ping
+- All changes are balanced for around 48 ping
 - This doc compares this mods changes to cash mod
 
 ## Increase Strike Chamber Window Slightly
@@ -30,14 +30,15 @@
   - On cashmod, feints were only consistently punishable with faster weapons (ie Evening Star stab). This makes it so feints should be punishable with any weapon.
   - Punishing feints still requires some skill and reaction speed, and the read obviously.
 
-## Stab Curve Slowed Down Slightly
+## Stab Curve Slowed Down to Vanilla
 
+- Still testing vanilla stab curve vs a halfway between vanilla and cash mod. but at the target ping, trying to reliably read a stab vs a stab morph is still very hard, even on vanilla
 - Important to note, you are still getting hit at the **exact** same time from when the stab animation starts. This change just makes the forward motion more readable
 
 - **Why**
 
   - Makes stab animation more digestible, and technically less strong, albeit slightly
-  - Stab is still strong and difficult read at the target ping (52ms)
+  - Stab is still strong and difficult read at the target ping (48ms)
 
 - **Downsides**
   - Nerfs neutral game (morph mixups). That being said, it still seems to be the best way to play and is still very hard to defend against at target ping
@@ -48,13 +49,14 @@
   - Extended parry: How much time **after** your parry lands that you have "bonus" parry
   - Active parry: How much time **after** you start riposte that you have "bonus" parry. This overwrites your extended parry window.
 - Implementation is a little more complicated than just changing extended parry value, since that messes with late ripostes
+
   - `ExperimentalParryDuration=0.01` -> `ExperimentalParryDuration=0.1`
     - Time in seconds that always gets added to end of your parry
   - `SuccessfulParryBonusDuration=0.1` (unchanged)
     - Time in seconds that gets added to the end of `iParryDuration`
     - This is the actual extended parry value, but since extended parry is directly tied to late ripostes, we use these 2 values to recreate a 200ms extended parry without messing with late ripostes. This has been tested and we found no differences or kinks in using this method. That being said, still needs more testing to be sure it is understood clearly.
   - `ActiveParryDuration=0.050` (50ms) -> `ActiveParryDuration=0`
-- This means, whenever you are in riposte, you will **never** have your parry window up
+    - This means, whenever you are in riposte, you will **never** have your parry window up
 
 - **Why**
 
@@ -70,18 +72,7 @@
   - _May_ see more "backparries" (I don't think this is the case, but needs testing.)
   - Technically this does make people harder to kill for mispositions. I do subscribe to the idea that people being easy to kill makes teamfight more nuanced and increases variety of macro. That being said I think we should strive to make 1vX extremely difficult, and not impossible in some situations.
 
-## Increased Late Riposte Window (experimental)
-
-- `ConfigRiposteWindow=0.1` (unchanged)
-- `ExperimentalParryDuration=0.01` -> `ExperimentalParryDuration=0.1`
-- `SuccessfulParryBonusDuration=0.05` -> `SuccessfulParryBonusDuration=0.1`
-- Kind of complicated and still not fully understood, but testing feels good so far.
-
-- **Why**
-  - Slight buff to ripostes. In cash mod, morph mixups seem to be the optimal way to play 99% of the time.
-  - Even in testing with this change, morph mixups were just better.
-
-## Movement Acceleration reduced (experimental)
+## Movement Acceleration reduced
 
 - `TimeToMaxSprint=3` -> `TimeToMaxSprint=4`
 
@@ -96,7 +87,7 @@
 
 ## Stamina System Overhaul (experimental)
 
-This is by far the biggest change, and still needs heavy testing. The philosophy of the new stam system is, lose stam much faster, but also gain it back much quicker. Hopefully this makes for more dynamic play, but we will have to see.
+This is by far the biggest change, and still needs testing. The philosophy of the new stam system is, lose stam much faster, but also gain it back much quicker. Hopefully this makes for more dynamic play, but we will have to see.
 
 - `StaminaRegen=(X=2.0,Y=5,Z=0.25)` -> `StaminaRegen=(X=0.5,Y=3.5,Z=0.25)`
 
@@ -110,13 +101,15 @@ This is by far the biggest change, and still needs heavy testing. The philosophy
 - In Weapon BPs
 
   - Feint cost `10` -> `15`
-  - Morph cost `7` -> `10`
-  - Miss cost `12` -> `20` (flat for all weapons)
+  - Morph cost `7` -> `12`
+  - Miss cost `12` -> `20`
+  - Hit reward `10` -> `15`
+  - `StabChamberStamCost=15` -> `StabChamberStamCost=10`
 
 - **Why**
 
   - Lose stam for offensive options (morph, feint, etc)
-  - Lose stam for mistakes (missing)
+  - Lose (a lot) stam for mistakes (missing)
   - Rewarded stam when you do something good (hits, reading, creating space)
   - Immediate reward when your opponent dumps stam (ie feint spam)
 
@@ -124,15 +117,58 @@ This is by far the biggest change, and still needs heavy testing. The philosophy
   - May cause more "low stam shenanigans" where the person who is losing on stam has more ways to get the advantage back
   - Players may not be used to how fast stam goes, especially if they're missing or constantly buffering. The game plays much differently so test with an open mind.
 
-## Stab Chamber Cost Reduced (experimental)
+## No Parry During CHFTP Stun
 
-- `StabChamberStamCost=15` -> `StabChamberStamCost=10`
+- `ChftpStunParryRecoveryTime=0.800`
+- `CustomChftpStunStamCost=0.0`
+  - No need to lose stam when you are taking damage
+  - Currently, the person who forced the CHFTP gets stam. This is not desired but can't be changed until Cswic gives us access to the stun BP
+- `ChftpStunParryDuration=0.01`
 
-## CHFTP Stun Removed (experimental)
+  - Due to current limitations, you have a 1ms parry window during your stun animation. So unless you are hitting the god parry, you are getting hit (if the opponent punishes on time)
+  - This also means the current meta is to immediately parry after your CHFTP so you can actually moved. Ideally, there is no stun, you are just in parry recovery but can move freely, but again, need access to the stun BP to make this possible.
 
-- `useChftpStun=1` -> `useChftpStun=0`
+  - **Why CHFTP Stun**
+
+    - See the "Neccessary Evil" section below
+
+  - **Why force damage on CHFTP**
+
+    Again, every offensive counter to a defensive option results in damage on the defender for failing. It should be no different here. Ideally, when you CHFTP, it just puts you in parry recovery (you can move, but not parry) instead of stunning you, but we can't do that at the moment. Cswic is working on making the stun BPs accessible for us so hopefully we can make it happen soon
+
+## Kick unfeintable
+
+- **Why**
+  - Kick feint runaway mixup is really silly, and puts too much onus on the attacker to make the perfect spacing play
+    - If I go in, I get kicked
+    - If I don't go in, they dodge me
+    - I can counter kick after going in, but now I have to burn stam, and risk giving up initiative because my opponent is doing this mix up on me
+  - Kick is the only attack in the game that breaks timings and can "steal" initiative
+    - In this system, kick is commital, and a risk, but still a viable option
+
+## Kick Miss is 10 stam
+
+- **Why**
+  - With the nerf to kicks, this felt appropriate
 
 ## Necessary Evil - True combo
 
-- Ideally, there is no true combo. But the simplest fix for this is to reintroduce some form of miss detector (ie when you get miss detector speed up parry recovery by 100ms). This has an obviously bad smell to it, because having any miss detector in a team fight environment introduces inconsistencies. Even if the miss detector effect wasn't perceivable to the player, it could change outcomes.
-- The only other way to fix this at the moment, is to change a ton of timings (ie parry recovery, miss combo speed, etc). This opens up a can of worms that we don't want to deal with at the moment.
+Ideally, there is no true combo. But the simplest fix for this is to reintroduce some form of miss detector (ie when you get miss detector speed up parry recovery by 100ms). This has an obviously bad smell to it, because having any miss detector in a team fight environment introduces inconsistencies. Even if the miss detector effect wasn't perceivable to the player, it could change outcomes.
+
+The only other way to fix this at the moment, is to change a ton of timings (ie parry recovery, miss combo speed, etc). This opens up a can of worms that we don't want to deal with at the moment.
+
+## Necessary Evil - CHFTP Stun
+
+In a world where CHFTP stun doesn't exist:
+
+- Feint counters parry
+- Parry counters nuetral accel and neutral drag (usually)
+- Chamber counters feint and accel, and can parry out if it's a drag
+
+Do you see the problem here? There is no counter to chamber because the defender has a safety net (feint to parry) if the chamber doesn't catch.
+
+You might say, "well they can just take a lot of stam punish for CHFTPing", but any form of punishment where the defender isn't getting hit for failing, is probably a bad punishment. For example, without CHFTP stun, I can decide to just burn all my stam to delay in a teamfight.
+
+There's an argument to be made that the player should be able to use their stam resource as a "perfect" defense option, but I don't agree with it at all. IMO, there should always be a way for the attacker to do damage if they outplay the defender.
+
+Even though I think CHFTP stun isn't the ideal way to solve the issue, it's the only way we can at the moment, while keeping chamber in the game. It's a neccessary bandaid imo.
