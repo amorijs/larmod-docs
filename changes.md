@@ -134,7 +134,9 @@ This is by far the biggest change, and still needs testing. The philosophy of th
 
   - **Why force damage on CHFTP**
 
-    Again, every offensive counter to a defensive option results in damage on the defender for failing. It should be no different here. Ideally, when you CHFTP, it just puts you in parry recovery (you can move, but not parry) instead of stunning you, but we can't do that at the moment. Cswic is working on making the stun BPs accessible for us so hopefully we can make it happen soon
+    Again, every offensive counter to a defensive option results in damage on the defender for failing. It should be no different here. There is no logical reason to be put into another 50/50 (timing parry for accel or drag/feint) after already failing defensively.
+
+    Ideally, when you CHFTP, it just puts you in parry recovery (you can move, but not parry) instead of stunning you, but we can't do that at the moment. Cswic is working on making the stun BPs accessible for us so hopefully we can make it happen soon
 
 ## Kick unfeintable
 
