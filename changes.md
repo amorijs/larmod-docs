@@ -169,7 +169,7 @@ In a world where CHFTP stun doesn't exist:
 
 Do you see the problem here? There is no counter to chamber because the defender has a safety net (feint to parry) if the chamber doesn't catch.
 
-You might say, "well they can just take a lot of stam punish for CHFTPing", but any form of punishment where the defender isn't getting hit for failing, is probably a bad punishment. For example, without CHFTP stun, I can decide to just burn all my stam to delay in a teamfight.
+You might say, "well they can just take a lot of stam punish for CHFTPing", but any form of punishment where the defender isn't getting hit for failing, is probably a bad punishment. For example, without CHFTP stun, I can decide to just burn all my stam to become temporarily invincible and delay in a teamfight.
 
 There's an argument to be made that the player should be able to use their stam resource as a "perfect" defense option, but I don't agree with it at all. IMO, there should always be a way for the attacker to do damage if they outplay the defender.
 
