@@ -22,8 +22,8 @@ delayedSuicideDuration=2
 customClashAngle=0.0
 useDisarmPickupDelay=1
 disarmPickupDelayDuration=0.8
-customTeamHitRecoveryTime=0.4
-customWorldHitRecoveryTime=0.775
+customTeamHitRecoveryTime=0.8
+customWorldHitRecoveryTime=0.8
 useCompKick=1
 customParryRecoveryTime=0.800
 customCompensationOne=(X=0.0,Y=0.0,Z=0.000001)
