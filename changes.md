@@ -167,6 +167,10 @@ Must I explain why
 
 Common request, not really opinionated on this one
 
+## Increased Recovery After Hitting Teammate
+
+No more true comboing off a teamhit. Recovery is same as parry recovery now
+
 ## Necessary Evil - True combo
 
 Ideally, there is no true combo. But the simplest fix for this is to reintroduce some form of miss detector (ie when you get miss detector speed up parry recovery by 100ms). This has an obviously bad smell to it, because having any miss detector in a team fight environment introduces inconsistencies. Even if the miss detector effect wasn't perceivable to the player, it could change outcomes.
