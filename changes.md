@@ -129,15 +129,15 @@ This is by far the biggest change, and still needs testing. The philosophy of th
   - Due to current limitations, you have a 1ms parry window during your stun animation. So unless you are hitting the god parry, you are getting hit (if the opponent punishes on time)
   - This also means the current meta is to immediately parry after your CHFTP so you can actually moved. Ideally, there is no stun, you are just in parry recovery but can move freely, but again, need access to the stun BP to make this possible.
 
-  - **Why CHFTP Stun**
+- **Why CHFTP Stun**
 
-    - See the "Neccessary Evil" section below
+  - See the "Neccessary Evil" section below
 
-  - **Why force damage on CHFTP**
+- **Why force damage on CHFTP**
 
-    Again, every offensive counter to a defensive option results in damage on the defender for failing. It should be no different here. There is no logical reason to be put into another 50/50 (timing parry for accel or drag/feint) after already failing defensively.
+  Again, every offensive counter to a defensive option results in damage on the defender for failing. It should be no different here. There is no logical reason to be put into another 50/50 (timing parry for accel or drag/feint) after already failing defensively.
 
-    Ideally, when you CHFTP, it just puts you in parry recovery (you can move, but not parry) instead of stunning you, but we can't do that at the moment. Cswic is working on making the stun BPs accessible for us so hopefully we can make it happen soon
+  Ideally, when you CHFTP, it just puts you in parry recovery (you can move, but not parry) instead of stunning you, but we can't do that at the moment. Cswic is working on making the stun BPs accessible for us so hopefully we can make it happen soon
 
 ## Kick unfeintable
 
