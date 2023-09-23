@@ -30,9 +30,6 @@ customCompensationOne=(X=0.0,Y=0.0,Z=0.000001)
 customCompensationTwo=(X=0.0,Y=0.0,Z=0.000001)
 customGlanceTurnAmount=(X=1000.0,Y=1000.0,Z=0.0)
 customFOV=115.0
-useChftpStun=1
-CustomChftpStunStamCost=0.0
-ExcludeStabChftpStam=1
 useChamberSlowdown=1
 CustomChamberSlowdownDuration=0.5
 useFreeStun=1
@@ -43,6 +40,18 @@ TimeToMaxSprint=4
 # CustomParryAngles=(X=120.0,Y=50.0,Z=0)
 CustomParryAngles=(X=150.0,Y=50,Z=0)
 EasyParryDuration=0.7
+
+useChftpStun=1
+DisableParryInChftpStun=1
+ChftpStunParryDuration=0
+CustomChftpStunStamCost=0.0
+ChftpStunParryRecoveryTime=1.5
+ChftpStunTurnCap=3
+ExcludeStabChftpStam=1
+ChftpStunValues=(X=1.25,Y=2,Z=1)
+# X = Duration of stun in seconds.  Default of chftp base stun is 1.5.
+# Y = The movement restriction type for the stun.  0 = none, 1 = partial sprint, 2 = walk, 3 = no movement.  Default is 3, no movement. 
+# Z = If you will be disarmed in addition to being stunned should the chftp bring you to 0 stam. 1 = you will also be disarmed at 0 stam, 0 = you will be only stunned.  Default is 1 
 
 ##################################################
 # If true, everything in this block gets used
@@ -59,14 +68,10 @@ ActiveParryDuration=0
 ###################################################
 
 WorldHitStamCostMulti=1.0
-# Short parry duration after being cftp stunned
-ChftpStunParryDuration=0.01
-# How long your parry recovery is after parrying during cftp stun
-ChftpStunParryRecoveryTime=0.800
+
 DisableKickParry=1
 DisableJumpParryRecovery=1
 StabFeintWindow=0.07
-ChftpStunTurnCap=3
 DisableZeroStamCombo=1
 
 # x: how many seconds before stam regen starts. y: stam per tick. z: tick length in seconds
@@ -75,6 +80,7 @@ StaminaRegen=(X=0.5,Y=3.5,Z=0.25)
 RokusKillfeedFix=1
 
 [/Game/Mordhau/Maps/WeaponRemovalMap_VersionA/BP_ModificationActor_VersionA.BP_ModificationActor_VersionA_C]
+DisableParryChftpStun=1
 StrikeChamberStamCost=15
 StabChamberStamCost=10
 ConfigRiposteWindow=0.125
@@ -117,4 +123,4 @@ WeaponsConfig=Scimitar=/larweapons/Weapons/BP_NACL_Scimitar.BP_NACL_Scimitar_C
 WeaponsConfig=Dagger=/larweapons/Weapons/BP_Dagger_Child.BP_Dagger_Child_C
 # ConfigStabCurve=/larweapons/Weapons/FC_StabCurve25.FC_StabCurve25
 ConfigStabCurve=/larweapons/Weapons/FC_VanillaStabCurve.FC_VanillaStabCurve
-
+ChftpStunAnimation=/larweapons/Weapons/MTG_Stun_Markmod.MTG_Stun_Markmod

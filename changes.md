@@ -120,14 +120,17 @@ This is by far the biggest change, and still needs testing. The philosophy of th
 
 ## No Parry During CHFTP Stun
 
-- `ChftpStunParryRecoveryTime=0.800`
-- `CustomChftpStunStamCost=0.0`
-  - No need to lose stam when you are taking damage
-  - Currently, the person who forced the CHFTP gets stam. This is not desired but can't be changed until Cswic gives us access to the stun BP
-- `ChftpStunParryDuration=0.01`
+`useChftpStun=1
+DisableParryInChftpStun=1
+ChftpStunParryDuration=0
+CustomChftpStunStamCost=0.0
+ChftpStunParryRecoveryTime=1.5
+ChftpStunTurnCap=3
+ExcludeStabChftpStam=1
+ChftpStunValues=(X=1.25,Y=2,Z=1)`
 
-  - Due to current limitations, you have a 1ms parry window during your stun animation. So unless you are hitting the god parry, you are getting hit (if the opponent punishes on time)
-  - This also means the current meta is to immediately parry after your CHFTP so you can actually moved. Ideally, there is no stun, you are just in parry recovery but can move freely, but again, need access to the stun BP to make this possible.
+- ~~Due to current limitations, you have a 1ms parry window during your stun animation. So unless you are hitting the god parry, you are getting hit (if the opponent punishes on time)~~ - Fixed!
+- ~~This also means the current meta is to immediately parry after your CHFTP so you can actually moved. Ideally, there is no stun, you are just in parry recovery but can move freely, but again, need access to the stun BP to make this possible.~~ - Fixed!
 
 - **Why CHFTP stun**
 
