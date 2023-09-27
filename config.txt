@@ -12,12 +12,12 @@ customStabChamberWindow=0.225
 customStrikeChamberWindow=0.225
 disableTrueComboDetector=1
 customTracerHangTime=0.0
-customChamberFeintCost=10
+customChamberFeintCost=15
 disableEndReleaseGlances=1
 disableWeaponSpecificSlowdown=1
-customStrikeMorphWIndow=0.85
-customStabMorphWIndow=0.85
-StrikeFeintWindow=0.09
+customStrikeMorphWIndow=0.86
+customStabMorphWIndow=0.86
+StrikeFeintWindow=0.08
 useDelayedSuicide=1
 delayedSuicideDuration=2
 customClashAngle=0.0
@@ -82,7 +82,7 @@ RokusKillfeedFix=1
 
 [/Game/Mordhau/Maps/WeaponRemovalMap_VersionA/BP_ModificationActor_VersionA.BP_ModificationActor_VersionA_C]
 DisableParryChftpStun=1
-StrikeChamberStamCost=13
+StrikeChamberStamCost=15
 StabChamberStamCost=10
 ConfigRiposteWindow=0.125
 ConfigMissDetectorRecovery=0.800

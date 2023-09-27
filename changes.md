@@ -5,7 +5,8 @@
   - Fix my main issues with Cashmod (which was still probably the best competitive version of the game we've had thus far)
   - Experiment with big changes (ie the stam overhaul)
   - Consistent mechanics
-- All changes are balanced for around 48 ping
+  - A game that _feels_ more fun to play
+- All changes are balanced for around 48-52 ping
 - This doc compares this mods changes to cash mod
 
 ## Increase Strike Chamber Window Slightly
@@ -104,7 +105,7 @@ This is by far the biggest change, and still needs testing. The philosophy of th
 
   - Feint cost `10` -> `15`
   - Morph cost `7` -> `12`
-  - Miss cost `12` -> `20`
+  - Miss cost `12` -> `18`
   - Hit reward `10` -> `15`
   - `StabChamberStamCost=15` -> `StabChamberStamCost=10`
 
@@ -153,17 +154,17 @@ ChftpStunValues=(X=1.25,Y=2,Z=1)`
   - Kick is the only attack in the game that breaks timings and can "steal" initiative
     - In this system, kick is commital, and a risk, but still a viable option
 
-## Kick Recovery is Faster (Can't punish a kick miss on reaction)
+## Kick Recovery is Faster
 
 - Felt appropriate considering the nerf
-- Still punishable with timing
+- Still punishable with timing / reacting as soon as they start their animation
 - Experimental, needs more testing
 
 ## Kick Miss is 10 Stam
 
 Felt appropriate considering the nerf
 
-## Dagger, Rapier, Scimitar stab windup slowed down slightly
+## Dagger, Rapier, Scimitar stab windup slowed down
 
 Must I explain why
 
@@ -174,6 +175,37 @@ Common request, not really opinionated on this one
 ## Increased Recovery After Hitting Teammate
 
 No more true comboing off a teamhit. Recovery is same as parry recovery now
+
+## Miss Recovery Increased by 200 (max 900ms)
+
+When your opponent misses, you now have initiative (very fast weapons can sometimes beat you)
+
+## Miss Combo Removed (Experimental)
+
+Missing is a mistake, or at the least a trade off (2v1s). IMO, there is no reason to have the one of the strongest attacks in the game (combo) that you can chain off a miss. This is one of those changes that feels so much better to us in testing. The miss combo whirlwind sucks to be on the receiving end of.
+
+## 2HTK Generally Removed
+
+Classic 2htk weapons now do 49 to body, and 65+ to head. This means they synergize both ways with most weapons headshots. Maul unchanged
+
+ex: exec to head does 65, GS to body does 36
+ex2: GS does 51 to head, exec does 49 to body
+
+## Executioner Sword & Polehammer can Combo (Experimental)
+
+Now that they aren't true 2htk, it felt completely irrelevant. Combo felt reasonable here.
+
+## ES 75 to Head, Polehammer 90 to Head, Exec 65 to Head (Experimental)
+
+This is to allow them to synergize with most weapons body damage
+
+Polehammer might be a bit too overtuned, but just wanted to test an extreme. In testing it didn't feel overpowered, especially since slower weapons don't have strong feints
+
+## Feint Window & Morph Window Decreased Slightly (Experimental)
+
+Most feints without actually using your body to make the animations scary are readable. A good feint is still unreadable. For some reason, overhead feints are pretty readable regardless of what you do to make anims scarier, this is probably because you can't hide the weapon behind you (like looking up with an lmb). Fast weapons still have very strong feints (BS, poleaxe, etc)
+
+Morphs are less of a offensive tool and more of a utility to increase windup and maybe catch people off guard in teamfight. That being said, good morphs (using camera movement) are still mostly unreadable especially with faster weapons.
 
 ## Necessary Evil - True combo
 
