@@ -1,5 +1,6 @@
 # Larmod Changes
 
+- This doc won't always have the most up to date changes as I experiment with things a lot. Sorry in advance if something isn't 100% accurate.
 - Purpose
   - Fix my main issues with Cashmod (which was still probably the best competitive version of the game we've had thus far)
   - Experiment with big changes (ie the stam overhaul)
