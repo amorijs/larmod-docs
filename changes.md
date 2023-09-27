@@ -188,7 +188,7 @@ Missing is a mistake, or at the least a trade off (2v1s). IMO, there is no reaso
 
 Classic 2htk weapons now do 49 to body, and 65+ to head. This means they synergize both ways, headshot/bodyshot, with most weapons. Maul unchanged
 
-ex: exec to head does 65, GS to body does 36
+ex: exec does 65 to head, GS does 36 to body
 
 ex2: GS does 51 to head, exec does 49 to body
 
