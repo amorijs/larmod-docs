@@ -194,7 +194,7 @@ ex2: GS does 51 to head, exec does 49 to body
 
 ## Executioner Sword & Polehammer can Combo (Experimental)
 
-Now that they aren't true 2htk, it felt completely irrelevant. Combo felt reasonable here.
+Now that they aren't true 2htk, it felt completely irrelevant. Combo felt reasonable here. Important to note that since polehammer has hit stop, it only really means they can combo after a kill, and parry during miss recovery.
 
 ## ES 75 to Head, Polehammer 90 to Head, Exec 65 to Head (Experimental)
 
