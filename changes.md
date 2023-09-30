@@ -33,9 +33,9 @@
   - On cashmod, feints were only consistently punishable with faster weapons (ie Evening Star stab). This makes it so feints should be punishable with any weapon.
   - Punishing feints still requires some skill and reaction speed, and the read obviously.
 
-## Stab Curve Slowed Down to Vanilla
+## Stab Curve Slowed Down to ~~Vanilla~~ an in-between of Cashmod and Vanilla
 
-- Still testing the vanilla stab curve, versus a "halfway" between vanilla and cash mod. but at the target ping, trying to reliably read a stab vs a stab morph is still very hard, even with the vanilla stab curve
+- At the target ping, trying to reliably read a stab vs a stab morph is still very hard, with the updated stab curve
 - Important to note, you are still getting hit at the **exact** same time (while in facehug) from when the stab animation starts. This change just makes the forward motion more readable
 
 - **Why**
