@@ -202,9 +202,12 @@ This is to allow them to synergize with most weapons body damage
 
 Polehammer might be a bit too overtuned, but just wanted to test an extreme. In testing it didn't feel overpowered, especially since slower weapons don't have strong feints
 
-## Feint Window & Morph Window Decreased Slightly (Experimental)
+## Feint Window & Morph Window Decreased by 1% (Experimental)
 
-Most feints without actually using your body to make the animations scary are readable. A good feint is still unreadable. For some reason, overhead feints are pretty readable regardless of what you do to make anims scarier, this is probably because you can't hide the weapon behind you (like looking up with an lmb). Fast weapons still have very strong feints (BS, poleaxe, etc)
+Hopefully this helps move towards 2 goals:
+
+1. Accels feel less like they hit you at mach1 speed out of wind up
+2. Weapons have more identity. In cash mod, the weapons with the best swing manip (ie zwei), can do feints and mixups almost as good as any other weapon. The goal is for weapons to have more tradeoffs.
 
 Morphs are less of a offensive tool and more of a utility to increase windup and maybe catch people off guard in teamfight. That being said, good morphs (using camera movement) are still mostly unreadable especially with faster weapons.
 
