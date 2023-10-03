@@ -122,6 +122,7 @@ WeaponsConfig=Mace=/larweapons/Weapons/BP_NACL_Mace.BP_NACL_Mace_C
 WeaponsConfig=Falchion=/larweapons/Weapons/BP_NACL_Falchion.BP_NACL_Falchion_C
 WeaponsConfig=Scimitar=/larweapons/Weapons/BP_NACL_Scimitar.BP_NACL_Scimitar_C
 WeaponsConfig=Dagger=/larweapons/Weapons/BP_Dagger_Child.BP_Dagger_Child_C
+WeaponsConfig=BastardSword=/larweapons/Weapons/BP_NACL_BastardSword.BP_NACL_BastardSword_C
 ConfigStabCurve=/larweapons/Weapons/FC_StabCurve25.FC_StabCurve25
 # ConfigStabCurve=/larweapons/Weapons/FC_VanillaStabCurve.FC_VanillaStabCurve
 ChftpStunAnimation=/larweapons/Weapons/MTG_Stun_Markmod.MTG_Stun_Markmod
