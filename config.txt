@@ -1,4 +1,5 @@
 [CompModifiers]
+ChftpStunAnimation=/larweapons/Weapons/MTG_Stun_Markmod.MTG_Stun_Markmod
 DZ2=1
 disableRegen=1
 disableMeleeThrow=1
@@ -125,4 +126,3 @@ WeaponsConfig=Dagger=/larweapons/Weapons/BP_Dagger_Child.BP_Dagger_Child_C
 WeaponsConfig=BastardSword=/larweapons/Weapons/BP_NACL_BastardSword.BP_NACL_BastardSword_C
 ConfigStabCurve=/larweapons/Weapons/FC_StabCurve25.FC_StabCurve25
 # ConfigStabCurve=/larweapons/Weapons/FC_VanillaStabCurve.FC_VanillaStabCurve
-ChftpStunAnimation=/larweapons/Weapons/MTG_Stun_Markmod.MTG_Stun_Markmod
