@@ -9,17 +9,6 @@
 - All changes are balanced for around 48-52 ping
 - This doc compares this mods changes to cash mod
 
-## Increase Strike Chamber Window Slightly
-
-- `customStrikeChamberWindow=0.200` -> `customStrikeChamberWindow=0.225`
-
-- **Why**
-  - Extra 25ms seems enough to make chamber a viable mechanic while still allowing relatively easy counter play
-  - On cashmod, chamber window feels too tight
-    - Sometimes chamber doesn't even catch accels
-    - "Perfect parry" timing, while not giving any rewards other than initiative
-    - With the downsides of chamber (higher stam cost, chftp stun, etc) it felt like chamber was never the correct option
-
 ## Feint Lockout Increased (can punish feints consistently) & Parry Recovery Increased
 
 - `StrikeAndStabFeintLockout=(X=0.1,Y=0.1,Z=0)` -> `StrikeAndStabFeintLockout=(X=0.125,Y=0.125,Z=0)`
@@ -77,7 +66,7 @@
 
 ## Movement Acceleration reduced
 
-- `TimeToMaxSprint=3` -> `TimeToMaxSprint=4`
+- `TimeToMaxSprint=3` -> `TimeToMaxSprint=3.5`
 
 - **Why**
 
@@ -196,7 +185,7 @@ ex2: GS does 51 to head, exec does 49 to body
 
 Now that they aren't true 2htk, it felt completely irrelevant. Combo felt reasonable here. Important to note that since polehammer has hit stop, it only really means they can combo after a kill, and parry during miss recovery.
 
-## ES 75 to Head, Polehammer 90 to Head, Exec 65 to Head (Experimental)
+## ES 70 to Head, Polehammer 90 to Head, Exec 65 to Head (Experimental)
 
 This is to allow them to synergize with most weapons body damage
 
