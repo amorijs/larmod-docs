@@ -27,7 +27,7 @@ disarmPickupDelayDuration=0.8
 customTeamHitRecoveryTime=0.8
 customWorldHitRecoveryTime=0.8
 useCompKick=1
-customParryRecoveryTime=0.800
+customParryRecoveryTime=0.825
 customCompensationOne=(X=0.0,Y=0.0,Z=0.000001)
 customCompensationTwo=(X=0.0,Y=0.0,Z=0.000001)
 customGlanceTurnAmount=(X=1000.0,Y=1000.0,Z=0.0)
@@ -35,7 +35,7 @@ customFOV=115.0
 useChamberSlowdown=1
 CustomChamberSlowdownDuration=0.5
 useFreeStun=1
-StrikeAndStabFeintLockout=(X=0.125,Y=0.125,Z=0)
+StrikeAndStabFeintLockout=(X=0.15,Y=0.15,Z=0)
 customMovementSpeedMultiplier=(X=1.04,Y=1.3,Z=1.8)
 customMovementAccelerations=(X=1.0,Y=1.786,Z=0.767)
 TimeToMaxSprint=3.5
@@ -45,7 +45,7 @@ EasyParryDuration=0.7
 
 useChftpStun=1
 DisableParryInChftpStun=1
-ChftpStunParryDuration=0
+ChftpStunParryDuration=0.325
 CustomChftpStunStamCost=0.0
 ChftpStunParryRecoveryTime=1.5
 ChftpStunTurnCap=3
@@ -86,7 +86,7 @@ DisableParryChftpStun=1
 StrikeChamberStamCost=15
 StabChamberStamCost=10
 ConfigRiposteWindow=0.125
-ConfigMissDetectorRecovery=0.800
+ConfigMissDetectorRecovery=0.825
 ConfigStabEarlyRelease=(A=0.30,B=1.0,C=0.30,D=1.0,E=0,F=0)
 ParryLowLoc=(X=85.0,Y=0,Z=-0)
 ParryLowScale=(X=1.0,Y=1.0,Z=0.96)
