@@ -11,8 +11,8 @@
 
 ## Feint Lockout Increased (can punish feints consistently) & Parry Recovery Increased
 
-- `StrikeAndStabFeintLockout=(X=0.1,Y=0.1,Z=0)` -> `StrikeAndStabFeintLockout=(X=0.125,Y=0.125,Z=0)`
-- `customParryRecoveryTime=0.775` -> `customParryRecoveryTime=0.800`
+- `StrikeAndStabFeintLockout=(X=0.1,Y=0.1,Z=0)` -> `StrikeAndStabFeintLockout=(X=0.15,Y=0.15,Z=0)`
+- `customParryRecoveryTime=0.775` -> `customParryRecoveryTime=0.825`
 
   - Parry recovery should scale evenly with feint recovery, hence the increase
   - This means true combo will be even stronger, but at least now it's a more consistent mechanic where sometimes you don't get true combo and sometimes you do. Now if someone parrys after they got hit, you can almost always true combo
