@@ -87,7 +87,7 @@ DisableParryChftpStun=1
 StrikeChamberStamCost=15
 StabChamberStamCost=15
 ConfigRiposteWindow=0.125
-ConfigMissDetectorRecovery=0.825
+ConfigMissDetectorRecovery=0.750
 ConfigStabEarlyRelease=(A=0.30,B=1.0,C=0.30,D=1.0,E=0,F=0)
 ParryLowLoc=(X=85.0,Y=0,Z=-0)
 ParryLowScale=(X=1.0,Y=1.0,Z=0.96)
