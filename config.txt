@@ -1,6 +1,6 @@
 [CompModifiers]
 ChftpStamForAttacker=0
-AssistDamageToCountAsKill=100
+AssistDamageToCountAsKill=1000
 ChftpStunAnimation=/larweapons/Weapons/MTG_Stun_Markmod.MTG_Stun_Markmod
 DZ2=1
 disableRegen=1
