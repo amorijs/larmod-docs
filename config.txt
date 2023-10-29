@@ -1,4 +1,5 @@
 [CompModifiers]
+TeamDamageReflect=0.0
 ChftpStamForAttacker=0
 AssistDamageToCountAsKill=1000
 ChftpStunAnimation=/larweapons/Weapons/MTG_Stun_Markmod.MTG_Stun_Markmod
@@ -60,7 +61,7 @@ ChftpStunValues=(X=1.25,Y=2,Z=1)
 # If true, everything in this block gets used
 useExperimentalParry=true
 
-# Any time parry gets hit, set remaining amount of parry 0 + x amount of seconds. Small number for animation blending fixes. 
+# Any time parry gets hit, set remaining amount of parry 0 + x amount of seconds.
 ExperimentalParryDuration=0.1
 
 # Extended parry - how much time after a parry lands you get bonus parry
