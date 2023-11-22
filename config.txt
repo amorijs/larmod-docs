@@ -41,7 +41,6 @@ StrikeAndStabFeintLockout=(X=0.1,Y=0.1,Z=0)
 customMovementSpeedMultiplier=(X=1.04,Y=1.3,Z=1.8)
 customMovementAccelerations=(X=1.0,Y=1.786,Z=0.767)
 TimeToMaxSprint=3.5
-CustomParryAngles=(X=120.0,Y=50.0,Z=0)
 EasyParryDuration=0.7
 useChftpStun=1
 DisableParryInChftpStun=1
@@ -51,25 +50,15 @@ ChftpStunParryRecoveryTime=1.5
 ChftpStunTurnCap=3
 ExcludeStabChftpStam=1
 ChftpStunValues=(X=1.25,Y=2,Z=1)
-# X Duration of stun in seconds.  Default of chftp base stun is 1.5.
-# Y The movement restriction type for the stun.  0 none, 1 partial sprint, 2 walk, 3 no movement.  Default is 3, no movement. 
-# Z If you will be disarmed in addition to being stunned should the chftp bring you to 0 stam. 1 you will also be disarmed at 0 stam, 0 you will be only stunned.  Default is 1 
-
-# If true, everything in this block gets used
 useExperimentalParry=true
-# Any time parry gets hit, set remaining amount of parry 0 + x amount of seconds.
 ExperimentalParryDuration=0.1
-# Extended parry - how much time after a parry lands you get bonus parry
 SuccessfulParryBonusDuration=0.1
-# Active parry - how much time after you start riposte that you have a parry window
 ActiveParryDuration=0
-
 WorldHitStamCostMulti=1.0
 DisableKickParry=1
 DisableJumpParryRecovery=1
 StabFeintWindow=0.06
 DisableZeroStamCombo=1
-# x: how many seconds before stam regen starts. y: stam per tick. z: tick length in seconds
 StaminaRegen=(X=0.65,Y=3.5,Z=0.25)
 RokusKillfeedFix=1
 
@@ -81,20 +70,6 @@ StabChamberStamCost=15
 ConfigRiposteWindow=0.125
 ConfigMissDetectorRecovery=0.775
 ConfigStabEarlyRelease=(A=0.30,B=1.0,C=0.30,D=1.0,E=0,F=0)
-ParryLowLoc=(X=75.0,Y=0.0,Z=-35.0)
-ParryLowScale=(X=1.0,Y=1.0,Z=0.81)
-ParryLowRot=(x=0.0,Y=59.99,Z=0)
-ParryHighRot=(X=0.0,Y=-44.99,Z=0)
-ParryHighScale=(X=1.0,Y=1.0,Z=1.1)
-ParryHighLoc=(X=10,Y=0,Z=-100)
-# compmod parry box
-#ParryLowLoc=(X=85.0,Y=0,Z=-0)
-#ParryLowScale=(X=1.0,Y=1.0,Z=0.96)
-#ParryLowRot=(x=0.001,Y=49,Z=0)
-#ParryHighRot=(X=0.001,Y=-35,Z=0)
-#ParryHighScale=(X=1.0,Y=1.0,Z=1.11)
-#ParryHighLoc=(X=45,Y=0,Z=-120)
-ForwardParryDistance=(X=30.0,Y=17.0,Z=0.0)
 WeaponsConfig=Longsword=/larweapons/Weapons/BP_NACL_Longsword.BP_NACL_Longsword_C
 WeaponsConfig=Zweihander=/larweapons/Weapons/BP_NACL_Zweihander.BP_NACL_Zweihander_C
 WeaponsConfig=Halberd=/larweapons/Weapons/BP_NACL_Halberd.BP_NACL_Halberd_C
@@ -124,5 +99,5 @@ WeaponsConfig=Falchion=/larweapons/Weapons/BP_NACL_Falchion.BP_NACL_Falchion_C
 WeaponsConfig=Scimitar=/larweapons/Weapons/BP_NACL_Scimitar.BP_NACL_Scimitar_C
 WeaponsConfig=Dagger=/larweapons/Weapons/BP_Dagger_Child.BP_Dagger_Child_C
 WeaponsConfig=BastardSword=/larweapons/Weapons/BP_NACL_BastardSword.BP_NACL_BastardSword_C
+WeaponsConfig=Axe=/larweapons/Weapons/BP_NACL_Axe.BP_NACL_Axe_C
 ConfigStabCurve=/larweapons/Weapons/FC_StabCurve25.FC_StabCurve25
-# ConfigStabCurve=/larweapons/Weapons/FC_VanillaStabCurve.FC_VanillaStabCurve
